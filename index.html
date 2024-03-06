@@ -7,63 +7,61 @@
         body {
             display: flex;
             justify-content: center;
+            align-items: center; /* Added to center content vertically */
+            height: 100vh; /* Full height */
         }
-        article {
+        article, header, section, nav, footer {
             max-width: 600px; 
+            width: 100%; /* Ensure it takes up the available width up to max-width */
+            box-sizing: border-box; /* Include padding and border in the element's width */
+            margin: 0 auto; /* Center the content horizontally */
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>J.N Adarsh</h1>
-        <p>I like to build things and write! I currently work at Uber where I work on building AI Tools and Compliance Strategy</p>
-    </header>
-    
-
-    
-    <section id="about">
-        <h2>Things I believe</h2>
-        <ul>
-            <li>Most important things cannot be taught, only learned.</li>
-            <li>Any kind of hindsight analysis is seldom useful. </li>
-            <li>Truth matters. There's no meaning in the absence of truth.</li>
-            <li>Scaling anything always has a cost.</li>
-            <li>One must refrain from playing game they don't intend to win.</li>
-        </ul>
- 
-    </section>
-    
-    <section id="portfolio">
-        <h2>Writings</h2>
-        <ul>
-            <li><a href="Blogs/Frameworks and boxes.html">Frameworks and boxes</a></li>
-            <li><a href="Blogs/Double Edged Sword.html">Double Edged Sword</a></li>
-            <li><a href="Blogs/Beauty, Symmetry and Suffering.html">Beauty, Symmetry and Suffering</a></li>
-            <li><a href="Blogs/Balance.html">Balance</a></li>
-            <li><a href="Blogs/Overthink but don't overreact.html">Overthink but don't overreact</a></li>
-            <li><a href="Blogs/On Freedom.html">On Freedom</a></li>
-            <li><a href="Blogs/On Intelligence.html">On Intelligence</a></li>
-            <li><a href="Blogs/Slowing Down Judgement.html">Slowing Down Judgement</a></li>
-            
-         
+    <div> <!-- Wrapper div to center everything -->
+        <header>
+            <h1>J.N Adarsh</h1>
+            <p>I like to build things and write! I currently work at Uber where I work on building AI Tools and Compliance Strategy</p>
+        </header>
         
-        </ul>
-        <p>Highlight some of your work here. You can list your projects or showcase images of your work.</p>
-    </section>
-    
-
-    <nav>
-        <ul>
-            <li><a href="#about">Resume</a></li>
-            <li><a href="#about">Twitter</a></li>
-            <li><a href="#portfolio">Blog</a></li>
-            <li><a href="#contact">LinkedIn</a></li>
-        </ul>
-    </nav>
-
-
-
-    <footer>
-    </footer>
+        <section>
+            <h2>Things I believe</h2>
+            <ul>
+                <li>Most important things cannot be taught, only learned.</li>
+                <li>Any kind of hindsight analysis is seldom useful. </li>
+                <li>Truth matters. There's no meaning in the absence of truth.</li>
+                <li>Scaling anything always has a cost.</li>
+                <li>One must refrain from playing game they don't intend to win.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Writings</h2>
+            <ul>
+                <li><a href="Blogs/Frameworks and boxes.html">Frameworks and boxes</a></li>
+                <li><a href="Blogs/Double Edged Sword.html">Double Edged Sword</a></li>
+                <li><a href="Blogs/Beauty, Symmetry and Suffering.html">Beauty, Symmetry and Suffering</a></li>
+                <li><a href="Blogs/Balance.html">Balance</a></li>
+                <li><a href="Blogs/Overthink but don't overreact.html">Overthink but don't overreact</a></li>
+                <li><a href="Blogs/On Freedom.html">On Freedom</a></li>
+                <li><a href="Blogs/On Intelligence.html">On Intelligence</a></li>
+                <li><a href="Blogs/Slowing Down Judgement.html">Slowing Down Judgement</a></li>
+            </ul>
+            <p>Highlight some of your work here. You can list your projects or showcase images of your work.</p>
+        </section>
+        
+        <nav>
+            <ul>
+                <li><a href="#about">Resume</a></li>
+                <li><a href="#about">Twitter</a></li>
+                <li><a href="#portfolio">Blog</a></li>
+                <li><a href="#contact">LinkedIn</a></li>
+            </ul>
+        </nav>
+        
+        <footer>
+        </footer>
+    </div> <!-- End of wrapper div -->
 </body>
 </html>
